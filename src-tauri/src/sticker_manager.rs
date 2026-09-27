@@ -176,7 +176,7 @@ pub fn create_sticker_window(app: &AppHandle, sticker: &Sticker) -> Result<(), S
             // Programmatic resizes can queue intermediate move events. Never persist
             // one after the window has already reached a newer position.
             if app_handle.get_webview_window(&format!("{STICKER_LABEL_PREFIX}{sticker_id}"))
-                .and_then(|window| window.outer_position().ok()) == Some(*position) {
+                .and_then(|window| window.outer_position().ok()) == Some(position.to_owned()) {
                 let _ = update_geometry(&app_handle, &sticker_id, Some((position.x, position.y)), None);
             }
         }
@@ -375,7 +375,6 @@ pub fn open_sticker_editor(app: &AppHandle, id: &str) -> Result<(), String> {
         .min_inner_size(480.0, 660.0)
         .resizable(false)
         .decorations(false)
-        .transparent(false)
         .shadow(true)
         .always_on_top(false)
         .center()
