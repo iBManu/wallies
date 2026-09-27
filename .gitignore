@@ -1,0 +1,34 @@
+# Frontend and native build outputs
+node_modules/
+dist/
+src-tauri/target/
+src-tauri/gen/schemas/
+
+# Local development
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Packaging and private signing material
+*.p12
+*.pfx
+*.pem
+*.key
+*.mobileprovision
+*.provisionprofile
+
+# Local sticker libraries or test profiles must never be published
+stickers.json
+settings.json
+stickers/
+app-data/
+user-data/
+
+# Unoptimized 128 MB source recording; the README uses the compressed demo GIF.
+docs/gif1.gif
