@@ -5,7 +5,6 @@
 <p align="center">
   <a href="https://github.com/iBManu/wallies/releases"><img src="https://img.shields.io/github/v/release/iBManu/wallies?display_name=tag&logo=github" alt="Latest release"></a>
   <a href="https://github.com/iBManu/wallies/releases"><img src="https://img.shields.io/github/downloads/iBManu/wallies/total?logo=github" alt="GitHub downloads"></a>
-  <a href="https://github.com/iBManu/wallies/actions/workflows/release.yml"><img src="https://github.com/iBManu/wallies/actions/workflows/release.yml/badge.svg" alt="Release builds"></a>
   <a href="https://github.com/iBManu/wallies/issues"><img src="https://img.shields.io/github/issues/iBManu/wallies?logo=github" alt="Open issues"></a>
   <img src="https://img.shields.io/badge/platforms-Windows%20%7C%20macOS%20%7C%20Linux-64748b" alt="Windows, macOS, and Linux">
 </p>
